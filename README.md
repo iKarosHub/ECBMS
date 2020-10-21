@@ -8,7 +8,7 @@
 
 
 **server**  
-&nbsp;&nbsp;&nbsp;&nbsp;|- index.js 服务器入口  
+    |- index.js 服务器入口  
 &nbsp;&nbsp;&nbsp;&nbsp;|- config 配置  
 &nbsp;&nbsp;&nbsp;&nbsp;|- whiteList 白名单  
 &nbsp;&nbsp;&nbsp;&nbsp;|- routes 路由层  
