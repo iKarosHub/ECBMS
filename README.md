@@ -6,7 +6,6 @@
 # 后台服务器架构设计
 
 server  
-
 <p style="text-indent:2em">|- index.js 服务器入口</p>
 &nbsp;&nbsp;&nbsp;&nbsp; <br>
 &nbsp;&nbsp;&nbsp;&nbsp;|- config 配置 <br>
