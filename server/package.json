@@ -11,15 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/figtree2020/ecbms.git"
+    "url": "git+https://github.com/iKarosHub/ECBMS.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/figtree2020/ecbms/issues"
+    "url": "https://github.com/iKarosHub/ECBMS/issues"
   },
-  "homepage": "https://github.com/figtree2020/ecbms#readme",
+  "homepage": "https://github.com/iKarosHub/ECBMS#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",

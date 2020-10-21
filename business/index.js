@@ -23,6 +23,6 @@ app.get('/', (req, res) => {
   res.render('register');
 })
 
-app.listen(8009, () => {
-  console.log('The server running at http://localhost:8009');
+app.listen(8080, () => {
+  console.log('The business server running at http://localhost:8080');
 })

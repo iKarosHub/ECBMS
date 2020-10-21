@@ -5,7 +5,7 @@ exports.serverOptions = {
   // 地址
   host: 'http://localhost',
   // 端口
-  port: 8008
+  port: 9090
 }
 
 // mysql数据库配置

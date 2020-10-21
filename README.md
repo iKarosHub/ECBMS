@@ -20,7 +20,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- connect.js 连接配置  
 
 
-# 开发步骤
+## 开发步骤
 1. 初始化package.json
    > npm init
 
@@ -34,12 +34,17 @@
    > npm install --save mysql2
 
 5. 创建数据库: ecbmsdb
+6. 安装解析post请求体模块，将post请求体参数解析为json
 
 
 
-# 搭建商家后台
+# 商家后台视图设计
 
-**business**
+**business**  
+&nbsp;&nbsp;&nbsp;&nbsp;|- public 静态资源  
+&nbsp;&nbsp;&nbsp;&nbsp;|- views 视图层   
+
+## 开发步骤
 
 1. 初始化package.json
    > npm init -y
@@ -48,3 +53,6 @@
    > npm i express ejs --save
 
 3. 添加Bootstap相关依赖
+
+
+# CORS 跨域资源共享
