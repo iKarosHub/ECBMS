@@ -21,8 +21,15 @@
 
 # 开发步骤
 1. 初始化package.json
-> npm init
+  > npm init
 
 2. 安装express服务器
    > npm i express --save
-   
+
+3. 安装sequelize模块，用于操作数据库
+   > npm i sequelize --save
+
+4. 安装你所使用的数据库驱动模块
+  > npm install --save mysql2
+
+5. 创建数据库
