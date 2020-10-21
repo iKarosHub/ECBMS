@@ -1,0 +1,25 @@
+{
+  "name": "ecbms",
+  "version": "1.0.0",
+  "description": "电商后台管理系统 E-commerce background management system",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figtree2020/ecbms.git"
+  },
+  "author": "iKaros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/figtree2020/ecbms/issues"
+  },
+  "homepage": "https://github.com/figtree2020/ecbms#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -5,7 +5,6 @@
 
 # 后台服务器架构设计
 
-
 **server**  
 &nbsp;&nbsp;&nbsp;&nbsp;|- index.js 服务器入口  
 &nbsp;&nbsp;&nbsp;&nbsp;|- config 配置  
@@ -18,3 +17,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- ORM api  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- model 模型  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 连接配置  
+
+
+# 开发步骤
+1. 初始化package.json
+> npm init
+
+2. 安装express服务器
+   > npm i express --save
+   
