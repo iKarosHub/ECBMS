@@ -6,6 +6,7 @@ class RoutesController {
     // req: 请求对象
     // res: 响应对象
     res.send({msg: '注册成功', code: 100});
+    // res.render('../register');
   }
 }
 

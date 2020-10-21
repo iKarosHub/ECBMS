@@ -8,7 +8,7 @@ module.exports = (app) => {
   // 路由
   app.get('/register', routesController.register);
 
-  app.get('/home', (req, res) => {
+  app.get('/', (req, res) => {
     res.send("首页");
   })
 }

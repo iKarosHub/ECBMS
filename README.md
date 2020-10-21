@@ -16,12 +16,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;|- lib ORM层  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- ORM api  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- model 模型  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- 连接配置  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|- connect.js 连接配置  
 
 
 # 开发步骤
 1. 初始化package.json
-  > npm init
+   > npm init
 
 2. 安装express服务器
    > npm i express --save
@@ -30,6 +30,9 @@
    > npm i sequelize --save
 
 4. 安装你所使用的数据库驱动模块
-  > npm install --save mysql2
+   > npm install --save mysql2
 
-5. 创建数据库
+5. 创建数据库: ecbmsdb
+
+6. 安装ejs模块
+   > npm i ejs --save
