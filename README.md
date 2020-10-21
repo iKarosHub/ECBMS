@@ -5,8 +5,8 @@
 
 # 后台服务器架构设计
 
-server
-  |- index.js 服务器入口
+server <br>
+  |- index.js 服务器入口 <br>
   |- config 配置
   |- whiteList 白名单
   |- routes 路由层
