@@ -16,23 +16,11 @@ global.Model = require(__basename + '/db/model/model.js');
 // 导入路由层
 const routes = require(__basename + '/routes/routes.js');
 
-// 导入ejs模块
-const ejs = require('ejs');
-
-// 导入路径处理模块
-const path = require('path');
-
 // 创建express实例
 const app = express();
 
-// 设置模板路径
-app.set('view ', path.resolve(__dirname, 'views'));
-// 设置模板引擎类型为html
-app.engine('.html', ejs.__express);
-
 // 加载所有路由
 routes(app);
-
 
 
 // 处理404

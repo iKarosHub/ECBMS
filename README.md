@@ -1,7 +1,8 @@
 # ECBMS
 电商后台管理系统 E-commerce background management system
 
-- 基于Nodejs开发
+- 基于Nodejs
+- 基于Bootstrap
 
 # 后台服务器架构设计
 
@@ -34,5 +35,16 @@
 
 5. 创建数据库: ecbmsdb
 
-6. 安装ejs模块
-   > npm i ejs --save
+
+
+# 搭建商家后台
+
+**business**
+
+1. 初始化package.json
+   > npm init -y
+
+2. 安装express、ejs模块
+   > npm i express ejs --save
+
+3. 添加Bootstap相关依赖
