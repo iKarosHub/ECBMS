@@ -6,7 +6,7 @@ const routesController = require(__basename + '/routesController/routesControlle
 // 导出模块
 module.exports = (app) => {
   // 路由
-  app.get('/register', routesController.register);
+  app.post('/register', routesController.register);
 
   app.get('/', (req, res) => {
     res.send("首页");
