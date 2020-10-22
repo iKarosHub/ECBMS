@@ -35,7 +35,8 @@
    > npm i body-parse --save
 7. 安装密码加密模块
    > npm i crypto --save
-
+8. 安装发邮件模块
+   > npm i nodemailer --save
 
 
 # 商家后台视图设计

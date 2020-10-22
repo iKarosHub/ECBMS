@@ -54,6 +54,34 @@ class RoutesController {
 
 
   }
+
+  // 获取邮箱验证码
+  getCode(req, res){
+    let email = req.body.email;
+    let code = Math.random().toString().substr(2, 6);
+    // console.log('code ==> ', code);
+
+    //存储验证码，以便注册验证
+    api.createData('Code', {
+      email,
+      code
+    }).then(() => {
+      // 发邮件
+      utils.sendEmail(email, code, (err, data)=>{
+        if(err){
+          res.send('err ==> ', err.response);
+        }else{
+          console.log('data ==> ', data);
+          res.send({msg: '验证码发至你的邮箱', code: 200});
+        }
+      });
+    }).catch(err => {
+      console.log('err => ', err);
+      res.send({msg: '获取邮箱验证码失败', code: 201});
+    })
+    
+    
+  }
 }
 
 // 导出实例
