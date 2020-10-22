@@ -36,7 +36,31 @@ User.init({
     allowNull: false,
     defaultValue: '',
     comment: '用户id'
-  }
+  },
+
+  // 邮箱
+  email: {
+    type: Sequelize.STRING(50),
+    allowNull: false,
+    defaultValue: '',
+    comment: '邮箱'
+  },
+
+  // 昵称
+  nickname: {
+    type: Sequelize.STRING(30),
+    allowNull: false,
+    defaultValue: '',
+    comment: '昵称'
+  },
+
+  // 密码
+  password: {
+    type: Sequelize.STRING(32),
+    allowNull: false,
+    defaultValue: '',
+    comment: '密码'
+  },
   
 }, {
   // 配置

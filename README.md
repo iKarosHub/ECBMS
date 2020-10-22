@@ -23,19 +23,20 @@
 ## 开发步骤
 1. 初始化package.json
    > npm init
-
 2. 安装express服务器
    > npm i express --save
-
 3. 安装sequelize模块，用于操作数据库
    > npm i sequelize --save
-
 4. 安装你所使用的数据库驱动模块
    > npm install --save mysql2
-
 5. 创建数据库: ecbmsdb
-6. 安装解析post请求体模块，将post请求体参数解析为json
 
+6. 安装body-parser请求体解析模块，将post请求体参数解析为json
+   > npm i body-parse --save
+7. 安装密码加密模块
+   > npm i crypto --save
+8. 安装发邮件模块
+   > npm i nodemailer --save
 
 
 # 商家后台视图设计
@@ -48,11 +49,7 @@
 
 1. 初始化package.json
    > npm init -y
-
 2. 安装express、ejs模块
    > npm i express ejs --save
-
 3. 添加Bootstap相关依赖
 
-
-# CORS 跨域资源共享

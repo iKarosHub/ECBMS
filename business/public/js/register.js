@@ -8,6 +8,14 @@ $(function(){
   // 获取邮箱验证码
   $('#getcode').on('click', function(){
 
+    // 获取邮箱
+    let email = $('#email').val();
+    // 验证码邮箱是否正确
+    if(!validForm.isEmail(email)){
+      $('#email').next().show().attr('name', 1);
+      return;
+    }
+
     $(this).text(time + 's 后重新发送').prop('disabled', true);
 
     const timer = setInterval(() => {
@@ -20,6 +28,16 @@ $(function(){
         $(this).text(time + 's 后重新发送');
       }
     }, 1000)
+
+    // 发起获取验证码的请求
+    $.ajax({
+      type: "POST",
+      data: { email },
+      url: 'http://localhost:9090/code',
+      success: function(result){
+        console.log("result ==> ", result);
+      }
+    })
   })
 
   //验证表单控件方法 
@@ -97,7 +115,8 @@ $(function(){
         let id = $(this).attr('id');
         userInfo[id] = $(this).val();
       })
-
+      // console.log("userInfo ==> ", userInfo);
+      
       // 发起注册请求
       console.log('发起注册请求');
       $.ajax({

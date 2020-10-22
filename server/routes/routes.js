@@ -7,8 +7,6 @@ const routesController = require(__basename + '/routesController/routesControlle
 module.exports = (app) => {
   // 路由
   app.post('/register', routesController.register);
-
-  app.get('/', (req, res) => {
-    res.send("首页");
-  })
+  // 获取验证码
+  app.post('/code', routesController.getCode);
 }
