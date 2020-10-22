@@ -7,7 +7,6 @@ class RoutesController {
     // res: 响应对象
     console.log('req.body ==> ', req.body);
     res.send({msg: '注册成功', code: 100});
-    // res.render('../register');
   }
 }
 

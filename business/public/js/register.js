@@ -97,7 +97,8 @@ $(function(){
         let id = $(this).attr('id');
         userInfo[id] = $(this).val();
       })
-
+      // console.log("userInfo ==> ", userInfo);
+      
       // 发起注册请求
       console.log('发起注册请求');
       $.ajax({

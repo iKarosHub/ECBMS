@@ -21,6 +21,7 @@
   "homepage": "https://github.com/iKarosHub/ECBMS#readme",
   "dependencies": {
     "body-parse": "^0.1.0",
+    "crypto": "^1.0.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
